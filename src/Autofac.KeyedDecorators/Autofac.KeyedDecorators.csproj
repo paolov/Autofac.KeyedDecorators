@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Paolo Vigori</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Autofac.KeyedDecorators</PackageId>
+    <PackageTags>autofac;keyedservices;decorators</PackageTags>
+    <Description>Helper functions for registering decorators of keyed services that support Autofac indexes (Autofac.Features.Indexed.IIndex&lt;K,V&gt;)</Description>
+    <Copyright>Copyright © 2018 Paolo Vigori</Copyright>
+    <PackageLicenseUrl>http://www.opensource.org/licenses/mit-license.php</PackageLicenseUrl>
+    <Version>1.0.3</Version>
+    <TargetFrameworks>netcoreapp2.0;net45;net47</TargetFrameworks>
+    <FileVersion>1.0.3.0</FileVersion>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+  </ItemGroup>
+</Project>
