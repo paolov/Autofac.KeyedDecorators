@@ -1,5 +1,5 @@
 # Autofac.KeyedDecorators
-Helper functions for registering decorators of keyed services that support Autofac indexes (Autofac.Features.Indexed.IIndex&lt;K,V>)
+Plugin for Autofac enabling decoration of multiple keyed services (Autofac.Features.Indexed.IIndex&lt;K,V>)
 
 ```C#
 var builder = new ContainerBuilder();
