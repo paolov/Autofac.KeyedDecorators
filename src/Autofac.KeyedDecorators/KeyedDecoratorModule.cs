@@ -2,7 +2,7 @@
 
 namespace Autofac.KeyedDecorators
 {
-    public class KeyedDecoratorModule<TInterface> : Module
+    internal class KeyedDecoratorModule<TInterface> : Module
     {
         private readonly KeyedDecoratorRegistrationData data;
 

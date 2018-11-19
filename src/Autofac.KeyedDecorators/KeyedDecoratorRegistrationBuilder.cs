@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Autofac.KeyedDecorators
 {
-    public class KeyedDecoratorRegistrationBuilder<TInterface> : IKeyedDecoratorRegistrationBuilder<TInterface>
+    internal class KeyedDecoratorRegistrationBuilder<TInterface> : IKeyedDecoratorRegistrationBuilder<TInterface>
     {
         private readonly KeyedDecoratorRegistrationData data;
 
@@ -29,6 +30,14 @@ namespace Autofac.KeyedDecorators
         public IKeyedDecoratorRegistrationBuilder<TInterface> WithDecorator(Type decoratorType)
         {
             data.ServiceDecoratorOrder.Add(decoratorType);
+            return this;
+        }
+
+        public IKeyedDecoratorRegistrationBuilder<TInterface> WithDecorators(IEnumerable<Type> decoratorTypes)
+        {
+            foreach (var type in decoratorTypes)
+                data.ServiceDecoratorOrder.Add(type);
+
             return this;
         }
 

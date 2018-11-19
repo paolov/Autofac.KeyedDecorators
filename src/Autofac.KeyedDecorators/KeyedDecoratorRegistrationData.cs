@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Autofac.KeyedDecorators
 {
-    public class KeyedDecoratorRegistrationData
+    internal class KeyedDecoratorRegistrationData
     {
         private readonly ContainerBuilder builder;
 

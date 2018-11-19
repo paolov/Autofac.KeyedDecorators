@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Autofac.KeyedDecorators
 {
@@ -7,6 +8,8 @@ namespace Autofac.KeyedDecorators
         IKeyedDecoratorRegistrationBuilder<TInterface> WithDecorator<TDecorator>();
 
         IKeyedDecoratorRegistrationBuilder<TInterface> WithDecorator(Type decoratorType);
+
+        IKeyedDecoratorRegistrationBuilder<TInterface> WithDecorators(IEnumerable<Type> decoratorTypes);
 
         IKeyedDecoratorRegistrationBuilder<TInterface> WithKey(object key);
 
