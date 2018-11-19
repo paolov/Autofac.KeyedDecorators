@@ -20,14 +20,14 @@ builder.RegisterKeyedType<SecondService>()
 //or multiple registrations
 var mapping = new Dictionary<string, Type>()
 {
-  ["A"] = typeof(FirstService),
-  ["B"] = typeof(SecondService),
+    ["A"] = typeof(FirstService),
+    ["B"] = typeof(SecondService),
 };
 
 var decorators = new[]
 {
-typeof(FirstDecorator),
-typeof(SecondDecorator)
+    typeof(FirstDecorator),
+    typeof(SecondDecorator)
 };
 
 builder.RegisterKeyedTypes(mapping)
