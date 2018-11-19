@@ -19,16 +19,16 @@ builder.RegisterKeyedType<SecondService>()
 
 //or multiple registrations
 var mapping = new Dictionary<string, Type>()
-			  {
-			      ["A"] = typeof(FirstService),
-			      ["B"] = typeof(SecondService),
-			  };
+{
+  ["A"] = typeof(FirstService),
+  ["B"] = typeof(SecondService),
+};
 
 var decorators = new[]
-				 {
-				 	typeof(FirstDecorator),
-				 	typeof(SecondDecorator)
-				 };
+{
+typeof(FirstDecorator),
+typeof(SecondDecorator)
+};
 
 builder.RegisterKeyedTypes(mapping)
        .ForInterface<IService>()
@@ -36,8 +36,8 @@ builder.RegisterKeyedTypes(mapping)
 
 var container = builder.Build();
 
- var factory = container.Resolve<IIndex<string, IService>>();
- var svc = factory["A"];
+var factory = container.Resolve<IIndex<string, IService>>();
+var svc = factory["A"];
 
  svc.Execute();
  ```
