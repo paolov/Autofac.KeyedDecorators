@@ -6,18 +6,18 @@
     <PackageId>Autofac.KeyedDecorators</PackageId>
     <PackageTags>autofac;keyedservices;decorators;di;ioc;dependencyinjection;services</PackageTags>
     <Description>Plugin for Autofac enabling decoration of multiple keyed services (Autofac.Features.Indexed.IIndex&lt;K,V&gt;)</Description>
-    <Copyright>Copyright © 2018 Paolo Vigori</Copyright>
+    <Copyright>Copyright © 2021 Paolo Vigori</Copyright>
     <PackageLicenseUrl>http://www.opensource.org/licenses/mit-license.php</PackageLicenseUrl>
-    <Version>1.1.5</Version>
-    <TargetFrameworks>netcoreapp2.0;net45;net47</TargetFrameworks>
-    <FileVersion>1.1.5.0</FileVersion>
-    <AssemblyVersion>1.1.5.0</AssemblyVersion>
+    <Version>1.1.6</Version>
+    <TargetFrameworks>netcoreapp2.1;net472</TargetFrameworks>
+    <FileVersion>1.1.6.0</FileVersion>
+    <AssemblyVersion>1.1.6.0</AssemblyVersion>
     <PackageProjectUrl>https://github.com/paolov/Autofac.KeyedDecorators</PackageProjectUrl>
     <RepositoryUrl>https://github.com/paolov/Autofac.KeyedDecorators</RepositoryUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/paolov/Autofac.KeyedDecorators/master/icon.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Autofac" Version="6.2.0" />
   </ItemGroup>
 </Project>
