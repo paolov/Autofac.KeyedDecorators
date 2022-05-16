@@ -1,4 +1,5 @@
-﻿namespace Tests.Autofac.KeyedDecorators
+﻿#if NET472
+namespace Tests.Autofac.KeyedDecorators
 {
     internal class Program
     {
@@ -9,3 +10,5 @@
         }
     }
 }
+
+#endif
